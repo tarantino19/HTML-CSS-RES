@@ -1,0 +1,175 @@
+body {
+  color: #444;
+  font-family: sans-serif;
+}
+/* values will get inherited to their child elements (nit all but mosylt the text).. example border-top: 10px solid blue; will not be inherited */
+
+/* h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+} */
+
+nav a:link {
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: orangered;
+}
+/* orange not gray because ot appears last compred to h1 h2 h3 above */
+
+h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* footer p {
+  font-size: 14px;
+} */
+
+#author {
+  font-style: italic;
+}
+
+/* article header p {
+    font-style: italic;
+} */
+
+#copyright {
+  font-size: 14px;
+}
+
+/* NOT ALLOWED TO REPEAT ID NAMES */
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+/* 
+# for id
+DOT . for class */
+
+/* use class in the real world   DOT */
+
+.main-header {
+  background-color: rgb(239, 239, 239);
+}
+
+aside {
+  background-color: rgb(242, 242, 242);
+  border-top: 3px solid #ff7883;
+  border-bottom: 3px solid #ff7883;
+}
+
+/* body {
+  background-color: #ff7883;
+} */
+
+/* pseudoclass */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+/* pseudo class also priority over elements */
+
+/* for specific child - nth child*/
+
+/* li:nth-child(even) {
+  color: red;
+} */
+
+/* Misconception */
+/* nothing happened because not how child pseudo class works  - it is not the first child*... if last-child it works cause its actually the last child*/
+
+article p:first-child {
+  color: crimson;
+}
+
+/* STYLING HYPERLINKS */
+
+a:link {
+  color: blue;
+  text-decoration: none;
+  font-weight: 1000;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  color: indianred;
+}
+
+/* CONFLICTING SELECTORS */
+
+/* specificity rankings - prioritization 0.1 - declarations mark with important keywords !important ? 0.2 - inline styles inside HTML 1 - ID selector 2 - class/pseudocass - 3 - element  4 - universal selector * */
+
+/* Resolving Conflict */
+#copyright {
+  color: black;
+}
+/* id priority */
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+/* if no id, last id will apply which is the text */
+
+/* footer p {
+  color: green !important;
+} */
+/* text will become green - however, try not to use it, not too much id classes all in the same selector*/
+
+/* INHERITANCE & UNIVERSAL SELECTOR */
+
+/* selectors  gets inherited */
+/* universal selector applies to all elements, no inheritance */
