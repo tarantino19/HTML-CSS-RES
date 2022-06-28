@@ -36,13 +36,35 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 35px;
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* gap: 30px; */
+      }
+
+      .el {
+        /* flex-basis: 200px; */
+        /* flex-shrink: 0; */
+        /* flex-grow: 1; * same as flex:1/
+      /* } */
+        /* flex: 0 0 200px; */
+        flex: 1;
+      }
+
+      .el--1 {
+      }
+
+      .el--5 {
       }
     </style>
   </head>
+
+  <!-- align items are movin g veritcal into main axis, justify-content are moving horizontal into main axis UNLESS we use flex-direction column-->
+
   <body>
     <div class="container">
       <div class="el el--1">HTML</div>
@@ -50,9 +72,9 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <!-- <div class="el el--6">languages</div> -->
+      <!-- <div class="el el--7">to</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
