@@ -16,8 +16,10 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
+  color: #343a40;
+  border-bottom: 8px solid #047857;
 }
 
 .container {
@@ -32,12 +34,41 @@ section {
 
 h2 {
   margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -0.5px;
 }
 
 .grid-3-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #065f46;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  font-weight: 500;
+  border-radius: 0.25em;
+  font-size: 1.05 rem;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  transition: 250ms;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.btn-small {
+  padding: 8px 12px;
+  font-size: 12px;
+  margin: 0;
 }
 
 /* ------------------------ */
@@ -58,10 +89,16 @@ header {
 
 h1 {
   margin-bottom: 24px;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  color: #065f46;
 }
 
 .header-text {
   margin-bottom: 24px;
+  font-size: 1.1rem;
+  line-height: 1.35rem;
 }
 
 img {
@@ -74,13 +111,19 @@ img {
 
 .features-title {
   margin-bottom: 16px;
+  font-size: 20px;
 }
 
 .features-text {
+  font-size: 18px;
+  line-height: 1.6rem;
 }
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #047857;
+  color: white;
+  padding: 20px;
 }
 
 .testimonial-box {
@@ -89,12 +132,15 @@ img {
 }
 
 .testimonial-box h2 {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  font-size: 26px;
 }
 
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.6rem;
 }
 
 /* CHAIRS */
@@ -104,6 +150,7 @@ img {
 
 h3 {
   margin-bottom: 24px;
+  font-size: 20px;
 }
 
 .chair-details {
@@ -128,8 +175,12 @@ h3 {
 .chair-price {
   display: flex;
   justify-content: space-between;
+  /* font-size: 20px; */
 }
 
 footer {
   margin-bottom: 48px;
+  font-size: 12px;
+  text-align: center;
+  color: #6b7280;
 }
