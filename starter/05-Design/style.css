@@ -17,6 +17,7 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family: sans-serif;
+  margin: 0;
 }
 
 .container {
