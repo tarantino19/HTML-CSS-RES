@@ -33,7 +33,7 @@ section {
 }
 
 h2 {
-  margin-bottom: 48px;
+  margin-bottom: 36px;
   font-size: 36px;
   letter-spacing: -0.5px;
 }
@@ -46,15 +46,16 @@ h2 {
 
 .btn:link,
 .btn:visited {
-  background-color: #065f46;
+  background-color: #047857;
   color: white;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 16px 32px;
+  padding: 12px 24px;
   font-weight: 500;
-  border-radius: 0.25em;
+  border-radius: .40em;
   font-size: 1.05 rem;
+  margin-right: 20px;
 }
 
 .btn:hover,
@@ -92,7 +93,8 @@ h1 {
   font-size: 2.5rem;
   letter-spacing: -1px;
   line-height: 1.2;
-  color: #065f46;
+  color: #047857;
+  /* text-shadow: 0.01px 0.01px 0.01px rgba(2, 2, 2); */
 }
 
 .header-text {
@@ -103,10 +105,15 @@ h1 {
 
 img {
   width: 100%;
+  border-radius: 10px;
 }
 
 /* FEATURES */
 .features-icon {
+  stroke: #047857;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
 }
 
 .features-title {
@@ -124,6 +131,7 @@ img {
   background-color: #047857;
   color: white;
   padding: 20px;
+  border-radius: 5px;
 }
 
 .testimonial-box {
@@ -144,18 +152,33 @@ img {
 }
 
 /* CHAIRS */
+.chair {
+  padding-bottom: 16px;
+  box-shadow: 0px 20px 30px 0px rgba(2, 2, 2, 0.04);
+  border-radius: 10px;
+}
+
 .chair-box {
-  padding: 24px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 16px;
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 h3 {
+  margin-top: 16px;
   margin-bottom: 24px;
   font-size: 20px;
 }
 
 .chair-details {
   list-style: none;
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 }
 
 .chair-details li {
@@ -169,13 +192,15 @@ h3 {
   margin-bottom: 0;
 }
 
-.chair-icon {
+.chairs-icon {
+  width: 22px;
+  height: 22px;
 }
 
 .chair-price {
   display: flex;
-  justify-content: space-between;
-  /* font-size: 20px; */
+  justify-content: space-between; */
+  /* font-size: 20px;
 }
 
 footer {
