@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  color: black;
+  line-height: 1;
+}
+
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+}
+
+.number,
+.text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #047857;
+}
+
+.number {
+  color: #b5b5b5e9;
+}
+
+.text {
+  color: #343a40;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: #047857;
+}
+
+.hidden-box {
+  grid-column: 2 / 3;
+  display: none;
+}
+
+.hidden-box p {
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+
+.hidden-box ul {
+  /* list-style: none; */
+  color: #343a40;
+  margin-left: 1.2em;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* .hidden-box ul { line-height: 1.5  }
+then hidden-box ul:lastchild - margin-bottom: 0) */
+
+/* OPEN ELEMENT */
+
+.open {
+  border-top: 4px solid #047857;
+}
+
+.open .hidden-box {
+  display: block;
+}
+
+.open .number,
+.open .text {
+  color: #047857;
+}
