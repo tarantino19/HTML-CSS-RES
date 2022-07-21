@@ -66,8 +66,8 @@ img {
   border-radius: 50%;
   stroke: #5f3dc4;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /*for the actual button to center*/
+  justify-content: center; /*for the actual button to center*/
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
