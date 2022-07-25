@@ -13,4 +13,74 @@ body {
   color: black;
   line-height: 1;
   background-color: whitesmoke;
+  font-size: 1.6rem;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+  text-align: center;
+  font-weight: 800;
+}
+
+nav,
+section,
+main,
+aside {
+  padding-top: 24px;
+}
+
+nav {
+  background-color: #495057;
+  grid-row: 1 / -1;
+  color: white;
+}
+
+menu {
+  background-color: #b197fc;
+  color: white;
+  grid-column: 2 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 40px;
+}
+
+button:last-child {
+  background-color: #f03e3e;
+  margin-left: auto;
+}
+
+button {
+  display: inline-block;
+  font-size: 16px;
+  background-color: #845ef7;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 12px;
+  font-weight: 800;
+}
+
+section {
+  background-color: #dee2e6;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.email {
+  background-color: #868e96;
+  height: 96px;
+  color: azure;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /*we use this because the section is a flexbox*/
+}
+
+aside {
+  background-color: #dee2e6;
 }
